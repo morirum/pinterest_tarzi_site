@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0;
+
+}
+
+.container .image {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+
+}
+.container .image.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0 ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: rgb(40,40,40,0.5) ;
+}
+.container .image.active img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    
+
+}
+.container .image img {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
